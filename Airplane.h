@@ -5,19 +5,22 @@
 
 class Airplane {
 private:
-    std::string model;          // Модель самолета
-    int seatingCapacity;        // Количество мест
-    std::string airlineName;    // Название авиакомпании
+    std::string model;
+    int seatingCapacity;
+    std::string airlineName;
 
 public:
-    // Конструктор
+
     Airplane(const std::string& model, int seatingCapacity, const std::string& airlineName);
 
-    // Методы
-    void performMaintenance();  // Выполнить техническое обслуживание
-    std::string getModel() const;       // Получить модель самолета
-    int getSeatingCapacity() const;     // Получить вместимость
-    std::string getAirlineName() const; // Получить название авиакомпании
+
+    void performMaintenance();
+
+    std::string getModel() const;
+
+    int getSeatingCapacity() const;
+
+    std::string getAirlineName() const;
 };
 
 #endif
